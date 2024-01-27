@@ -87,12 +87,3 @@ class ShoppingCart:
     def _validate_item_in_cart(self, item_name: str):
         if item_name not in self._items:
             raise ItemNotFoundInCatalogError("Item not found in cart.")
-
-
-# Usage example (to be placed outside the class definition)
-# catalog = {'apple': 0.5, 'banana': 0.3, 'orange': 0.7}
-# cart = ShoppingCart('ABC12345DE-A', catalog)
-# cart.add_item('apple', 2)
-# cart.add_item('banana', 3)
-# print(cart.id, cart.customer_id, cart.items)
-# print(f"Total cost: ${cart.get_total_cost()}")
