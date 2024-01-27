@@ -1,5 +1,7 @@
 ## Shopping Cart
 
+- **Python version used: 3.11.5**
+
 ### Steps to run tests:
 
 - cd into the homework-1 folder: 
