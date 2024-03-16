@@ -72,3 +72,16 @@ void freeStack(SecureStack* stack) {
     free(stack->items);
     free(stack);
 }
+
+int main() {
+    SecureStack* stack = createStack(5);
+    OperationResult result;
+
+    push(stack, "Hello");
+    push(stack, "World");
+    printf("%s\n", pop(stack, &result));
+    printf("%s\n", pop(stack, &result));
+
+    freeStack(stack);
+    return 0;
+}

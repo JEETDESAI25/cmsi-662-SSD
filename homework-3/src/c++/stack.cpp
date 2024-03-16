@@ -50,3 +50,18 @@ private:
         capacity = newCapacity;
     }
 };
+
+int main() {
+    StringStack stack(5);
+
+    try {
+        stack.push("Hello");
+        stack.push("World");
+        std::cout << stack.pop() << std::endl;
+        std::cout << stack.pop() << std::endl;
+    } catch (const std::exception& e) {
+        std::cerr << "Error: " << e.what() << std::endl;
+    }
+
+    return 0;
+}

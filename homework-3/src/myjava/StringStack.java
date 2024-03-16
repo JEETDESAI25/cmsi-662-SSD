@@ -1,4 +1,4 @@
-package java;
+package myjava;
 
 public class StringStack {
     private String[] items; // Array to store the stack items
@@ -49,4 +49,7 @@ public class StringStack {
         System.arraycopy(items, 0, newItems, 0, items.length);
         items = newItems;
     }
+
+
+
 }
