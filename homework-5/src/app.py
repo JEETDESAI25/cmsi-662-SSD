@@ -53,18 +53,6 @@ def dashboard():
     return render_template("dashboard.html", email=g.user)
 
 
-# Displays the details of the user's account such as account number, balance, and user's name
-# @app.route("/details", methods=["GET", "POST"])
-# def details():
-#     if not logged_in():
-#         return render_template("login.html")
-#     account_number = request.args["account"]
-#     return render_template(
-#         "details.html",
-#         user=g.user,
-#         account_number=account_number,
-#         balance=get_balance(account_number, g.user),
-#     )
 @app.route("/details", methods=["GET", "POST"])
 def details():
     if not logged_in():

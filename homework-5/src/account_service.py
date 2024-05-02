@@ -6,10 +6,6 @@ The module interacts with a SQLite database named 'storage.db' that contains a t
 - owner: The owner of the account.
 - balance: The current balance of the account.
 
-Functions:
-- get_balance(account_number, owner): Retrieves the balance of a logged-in user from the 'accounts' table in the database.
-- do_transfer(source, target, amount): Transfers a specified amount from the source account to the target account and updates the balances in the database.
-
 Note: This module assumes that the 'storage.db' database file exists and is properly configured.
 """
 
