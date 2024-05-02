@@ -20,7 +20,7 @@ import sqlite3
 # The function gets the balance of logged in user from the database bank of the table named accounts
 def get_balance(account_number, owner):
     try:
-        con = sqlite3.connect("src/storage.db")
+        con = sqlite3.connect("storage.db")
         cur = con.cursor()
         cur.execute(
             """
@@ -52,7 +52,7 @@ def do_transfer(source, target, amount):
     """
     try:
         # Connect to the SQLite database
-        con = sqlite3.connect("src/storage.db")
+        con = sqlite3.connect("storage.db")
         cur = con.cursor()
 
         # Check if the target account exists

@@ -1,14 +1,6 @@
 """
 This module provides functions for user authentication and token generation using Flask and SQLite.
 
-It includes the following functions:
-- get_user_with_credentials: Retrieves a user from the database based on the provided email and password.
-- logged_in: Authenticates the user's credentials and verifies the tokens on the cookies.
-- create_token: Generates a token for the provided email using a symmetric login algorithm.
-
-The module also defines the following constants:
-- SECRET: The secret key used for token generation.
-
 Note: This module requires the Flask, SQLite, passlib, and jwt libraries to be installed.
 """
 
@@ -39,7 +31,7 @@ def get_user_with_credentials(email, password):
                       Returns None if the user is not found or the password is incorrect.
     """
     try:
-        con = sqlite3.connect("src/storage.db")
+        con = sqlite3.connect("storage.db")
         cur = con.cursor()
 
         # Execute a SQL query to retrieve the user with the provided email

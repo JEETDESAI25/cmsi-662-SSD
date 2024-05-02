@@ -29,7 +29,7 @@ def create_accounts_table():
     - None
     """
     # Connect to the SQLite database file named "storage.db"
-    con = sqlite3.connect("src/storage.db")
+    con = sqlite3.connect("storage.db")
 
     con.execute("PRAGMA foreign_keys = ON")
 

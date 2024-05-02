@@ -29,7 +29,7 @@ def setup_user_database():
     Returns:
         None
     """
-    con = sqlite3.connect("src/storage.db")
+    con = sqlite3.connect("storage.db")
     cur = con.cursor()
 
     # Create the 'users' table
